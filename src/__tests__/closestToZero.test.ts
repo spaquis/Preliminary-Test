@@ -12,17 +12,21 @@ describe("closestToZero Function", () => {
         const result = closestToFunction([]);
         expect(result).toEqual(0);
      })
-    test("Array contains positive value", () => {
+    test("Array contains positive values", () => {
         const result = closestToFunction([8, 5, 10]);
         expect(result).toEqual(5);
     })
-    test("Array contains positive and negative value", () => {
+    test("Array contains positive and negative values", () => {
         const result = closestToFunction([5, 4, -9, 6, -10, -1, 8]);
         expect(result).toEqual(-1);
     })
     test("Array contains same closest number (positive and negative)", () => {
         const result = closestToFunction([8, 2, 3, -2]);
-        expect(result).toEqual(-1);
+        expect(result).toEqual(2);
+    })
+    test("Array contains same closest number (positive and negative)", () => {
+        const result = closestToFunction([8, -2, 3, 2]);
+        expect(result).toEqual(2);
     })
     test("Array contains 0)", () => {
         const result = closestToFunction([8, 2, 3, -2, 0]);
