@@ -1,0 +1,28 @@
+{
+  "name": "Preliminary-Test",
+  "version": "1.0.0",
+  "description": "A simple typescript project with closestToZero function.",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaquis/Preliminary-Test.git"
+  },
+  "keywords": [],
+  "author": "sebastien.paquis@gmail.com",
+  "bugs": {
+    "url": "https://github.com/spaquis/Preliminary-Test/issues"
+  },
+  "homepage": "https://github.com/spaquis/Preliminary-Test#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  }
+}
