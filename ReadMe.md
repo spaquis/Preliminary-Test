@@ -23,5 +23,5 @@ Simple Typescript project with a closestToZero function :
 	# Launch Test
     yarn test
     
-    # Get test coverage
+    # Get code coverage
     yarn coverage

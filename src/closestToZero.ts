@@ -9,9 +9,12 @@ const closestToZero = (numbers: Array<number>): number => {
   }
 
   // Get Closest To Zero value
-  const closestToZeroValue = numbers.reduce((a: number, b: number) =>
-    Math.abs(a) < Math.abs(b) ? a : b
-  );
+  const closestToZeroValue = numbers.reduce((a: number, b: number) => {
+    // Check if b is null or undefined
+    if (b == null) return a;
+    // Compare abs(a) et abs(b) in order to return the min value between a & b
+    return Math.abs(a) < Math.abs(b) ? a : b;
+  });
 
   // If closestToZeroValue is negative, we check if same positive value exist in array
   if (closestToZeroValue < 0) {

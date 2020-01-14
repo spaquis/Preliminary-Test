@@ -32,8 +32,16 @@ describe("closestToZero Function", () => {
     const result = closestToFunction([8, -2, 3, 2]);
     expect(result).toEqual(2);
   });
-  test("Array contains 0)", () => {
+  test("Array contains 0", () => {
     const result = closestToFunction([8, 2, 3, -2, 0]);
     expect(result).toEqual(0);
+  });
+  test("Array contains null value", () => {
+    const result = closestToFunction([8, 5, 10, null]);
+    expect(result).toEqual(5);
+  });
+  test("Array contains undefined value", () => {
+    const result = closestToFunction([8, 5, 10, undefined]);
+    expect(result).toEqual(5);
   });
 });
