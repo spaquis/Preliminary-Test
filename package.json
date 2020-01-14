@@ -23,6 +23,7 @@
     "typescript": "^3.7.4"
   },
   "scripts": {
+    "closestToZero": "ts-node src/index.ts",
     "test": "jest --watch"
   }
 }
