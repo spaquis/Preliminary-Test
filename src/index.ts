@@ -13,7 +13,9 @@ const INVALID_ARGS =
  * @throws Error: If it's an invalid number
  */
 const castStringToNumber = (value: string) => {
+  // Cast Value
   const numberValue = +value;
+  // If cast failed
   if (isNaN(numberValue)) {
     throw new Error(INVALID_NUMBER);
   }
@@ -25,9 +27,9 @@ const castStringToNumber = (value: string) => {
  */
 export const executeProgram = () => {
   var args = process.argv;
-  // Get Array from args and convert it to number array (Remove 2 first elements from array "node" && "src/index.ts")
   let arrayNumber: Array<number> = [];
   try {
+    // Get Array from args and convert it to number array (Remove 2 first elements from array "node" && "src/index.ts")
     arrayNumber = args
       .slice(2, args.length)
       .map((value: string) => castStringToNumber(value));

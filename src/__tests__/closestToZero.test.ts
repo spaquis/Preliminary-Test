@@ -8,6 +8,10 @@ describe("closestToZero Function", () => {
     const result = closestToFunction(null);
     expect(result).toEqual(0);
   });
+  test("Array is undefined", () => {
+    const result = closestToFunction(undefined);
+    expect(result).toEqual(0);
+  });
   test("Array is empty", () => {
     const result = closestToFunction([]);
     expect(result).toEqual(0);
@@ -24,11 +28,11 @@ describe("closestToZero Function", () => {
     const result = closestToFunction([5, 4, -9, 6, -10, -1, 8]);
     expect(result).toEqual(-1);
   });
-  test("Array contains same closest number (positive and negative)", () => {
+  test("Array contains same closest number (positive and negative), positive first", () => {
     const result = closestToFunction([8, 2, 3, -2]);
     expect(result).toEqual(2);
   });
-  test("Array contains same closest number (positive and negative)", () => {
+  test("Array contains same closest number (positive and negative), negative first", () => {
     const result = closestToFunction([8, -2, 3, 2]);
     expect(result).toEqual(2);
   });

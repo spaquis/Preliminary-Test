@@ -18,7 +18,7 @@ describe("closestToZero Function", () => {
   test("Args are empty", () => {
     var mainFile = require("../index");
     mainFile.executeProgram();
-    // Expected no Error
+    // Expect no Error
   });
   test("Args contains invalid value", () => {
     // Mock Args
@@ -35,6 +35,6 @@ describe("closestToZero Function", () => {
     process.argv.push("1", "2", "-3", "-5");
     var mainFile = require("../index");
     mainFile.executeProgram();
-    // Expected no Error
+    // Expect no Error
   });
 });
